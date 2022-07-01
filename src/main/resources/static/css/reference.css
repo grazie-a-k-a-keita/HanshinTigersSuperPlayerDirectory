@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+html {
+	background: repeating-linear-gradient(90deg, black, black 10px, #fff 10px, #fff 120px);
+}
+
+.conteiner {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	background-color: rgba(231, 231, 231, 0.98);
+	font-size: 32px;
+	padding: 16px 0;
+	margin: 32px 0;
+	border-radius: 8px;
+}
+
+h1:hover {
+	border-bottom: solid 2px rgb(109, 108, 108);
+}
+
+p{
+	background-color: rgba(100, 96, 96, 0.8);
+	border-radius: 8px;
+	padding: 8px 0;
+}
+
+.home {
+	color: rgb(238, 234, 234);
+	background-color: rgb(109, 108, 108);
+	font-size: 24px;
+	padding: 8px 24px;
+	border-radius: 8px;
+	margin-bottom: 24px;
+	transition: all 0.3s;
+}
+
+.home:hover {
+	text-decoration: none;
+	color: black;
+	background-color: gold;
+}
+
+/* テーブル */
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(200, 200, 200);
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	width: 100%;
+	margin: 0 0 24px 0;
+}
+
+thead {
+	height: 56px;
+	line-height: 56px;
+}
+
+th,
+td {
+	border: 1px solid rgba(170, 170, 170, 0.98);
+}
+
+th {
+	background-color: rgba(231, 231, 231, 0.98);
+}
+
+td {
+	background-color: #fff;
+	text-align: center;
+	line-height: 56px;
+	height: 56px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>超阪神タイガーススーパー選手名鑑(2021ver)</title>
+	<link rel="shortcut icon" th:href="@{hanshinlogo.ico}" type="image/x-icon">
+	<link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="conteiner">
+			<div class="header-left" id="header-left">
+				<h1 id="headerTitle">超阪神タイガーススーパー選手名鑑(2021ver)</h1>
+			</div>
+			<div class="header-right">
+				<a href="/allplayer">選手の背番号がわからない方はこちら</a>
+				<a href="/commentList">コメント編集画面へ</a>
+			</div>
+		</div>
+	</header>
+	<!-- 選手検索 -->
+	<div class="player-search">
+		<div class="conteiner">
+			<div class="search">
+				<input id="number-input" name="number-input" placeholder="背番号を入力してください（半角数字）">
+				<button id="find-button">探す!!</button>
+			</div>
+		</div>
+	</div>
+	<!-- 選手情報 -->
+	<div class="information">
+		<div id="playerInformation" class="playerInformation">
+			<div class="conteiner">
+				<div class="playerInformation-left">
+					<img id="facePicture">
+				</div>
+				<div class="playerInformation-right">
+					<p id="number"></p>
+					<p id="name"></p>
+					<p id="position"></p>
+					<p id="leftAndRight"></p>
+				</div>
+			</div>
+		</div>
+		<!-- コメント -->
+		<div class="conteiner">
+			<div id="comment"></div>
+		</div>
+	</div>
+	<!-- 打撃成績テーブル -->
+	<div class="hide" id="batterRecordTable">
+		<div class="conteiner">
+			<table id="batterRecord">
+				<caption>打撃成績(2021)</caption>
+				<thead>
+					<th>試<br><br>合</th>
+					<th>打<br><br>席</th>
+					<th>打<br><br>数</th>
+					<th>得<br><br>点</th>
+					<th>安<br><br>打</th>
+					<th>二<br>塁<br>打</th>
+					<th>三<br>塁<br>打</th>
+					<th>本<br>塁<br>打</th>
+					<th>塁<br><br>打</th>
+					<th>打<br><br>点</th>
+					<th>盗<br><br>塁</th>
+					<th>盗<br>塁<br>刺</th>
+					<th>犠<br><br>打</th>
+					<th>犠<br><br>飛</th>
+					<th>四<br><br>球</th>
+					<th>故<br>意<br>四</th>
+					<th>死<br><br>球</th>
+					<th>三<br><br>振</th>
+					<th>併<br>殺<br>打</th>
+					<th>打<br><br>率</th>
+					<th>長<br>打<br>率</th>
+					<th>出<br>塁<br>率</th>
+				</thead>
+				<tbody id="batterRecordTableBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- 投手成績テーブル -->
+	<div class="hide" id="pitcherPerformanceTable">
+		<div class="conteiner">
+			<table id="pitcherPerformance">
+				<caption>投手成績(2021)</caption>
+				<thead>
+					<th>登<br><br>板</th>
+					<th>勝<br><br>利</th>
+					<th>敗<br><br>北</th>
+					<th>セ<br>|<br>ブ</th>
+					<th>ホ<br>|<br>ル</th>
+					<th>H<br><br>P</th>
+					<th>完<br><br>投</th>
+					<th>完<br>封<br>勝</th>
+					<th>無<br>四<br>球</th>
+					<th>勝<br><br>率</th>
+					<th>打<br><br>者</th>
+					<th>投<br>球<br>回</th>
+					<th>安<br><br>打</th>
+					<th>本<br>塁<br>打</th>
+					<th>四<br><br>球</th>
+					<th>故<br>意<br>四</th>
+					<th>死<br><br>球</th>
+					<th>三<br><br>振</th>
+					<th>暴<br><br>投</th>
+					<th>ボ<br>|<br>ク</th>
+					<th>失<br><br>点</th>
+					<th>自<br>責<br>点</th>
+					<th>防<br>御<br>率</th>
+				</thead>
+				<tbody id="pitcherPerformanceTableBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- 守備成績テーブルをmain.jsで作成 -->
+	<div id="defensivePerformanceTable">
+		<div class="conteiner" id="defensivePerformanceTableConteiner">
+		</div>
+	</div>
+	<script type="text/javascript" th:src="@{/js/main.js}"></script>
+</body>
+
+</html>
