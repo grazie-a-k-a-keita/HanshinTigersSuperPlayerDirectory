@@ -1,4 +1,4 @@
-// <DB接続メソッド>
+// <DB接続用>
 // url(パラム)にアクセス(fetch)する関数
 // async function findPlayer(number) {
 //   const response = await fetch("/player?number=" + number);
@@ -24,6 +24,100 @@
 //   const response = await fetch("/defensivePerformance?playerId=" + playerId);
 //   return await response.json();
 // }
+
+// <テスト用データ>
+async function findPlayer(number) {
+  return {
+    id: 1,
+    name: "岩崎 優",
+    position: "投手",
+    facePicture: "../13.jpg",
+    backNumber: "13",
+    leftAndRight: "左 / 左",
+  };
+}
+
+async function findComment(playerId) {
+  return {
+    context: "テスト用データ",
+    myContext: "テスト用データ",
+  };
+}
+
+async function findBatterRecord(playerId) {
+  return {
+    id: 1,
+    playerId: 1,
+    game: 1,
+    bat: 0,
+    atBat: 0,
+    score: 0,
+    hitting: 0,
+    twoBaseHit: 0,
+    threeBaseHit: 0,
+    homeRun: 0,
+    baseHit: 0,
+    runBattedIn: 0,
+    stolenBase: 0,
+    caughtStealing: 0,
+    sacrificeBunt: 0,
+    sacrificeFly: 0,
+    walk: 0,
+    intentionalWalk: 0,
+    hit_by_a_pitch: 0,
+    strikeOut: 0,
+    doublePlay: 0,
+    battingAverage: 0,
+    sluggingPercentage: 0,
+    onBasePercentage: 0,
+  };
+}
+
+async function findPitcherPerformance(playerId) {
+  return {
+    id: 1,
+    playerId: 1,
+    pitched: 1,
+    win: 0,
+    lose: 0,
+    save: 0,
+    hold: 0,
+    holdPoint: 0,
+    completeGame: 0,
+    shutout: 0,
+    noFourBalls: 0,
+    winRate: 0,
+    batter: 0,
+    inningsPitched: 0,
+    hitting: 0,
+    homeRun: 0,
+    walk: 0,
+    intentionalWalk: 0,
+    hit_by_a_pitch: 0,
+    strikeOut: 0,
+    wildPitch: 0,
+    balk: 0,
+    conceded: 0,
+    earnedRun: 0,
+    earnedRunAverage: 0,
+  };
+}
+
+async function findDefensivePerformance(playerId) {
+  return [
+    {
+      id: 1,
+      playerId: 1,
+      defensivePosition: "投手",
+      game: 0,
+      putOut: 0,
+      killing: 0,
+      error: 0,
+      doublePlay: 0,
+      fieldingPercentage: 0,
+    },
+  ];
+}
 
 // ボタンをクリックしたときにクリック関数を付与 + Enterでクリック関数実行
 document.getElementById("find-button").addEventListener("click", onClick);
@@ -90,17 +184,7 @@ async function onClick() {
   const number = document.getElementById("number-input").value;
 
   try {
-    // <DB接続時取得データ>
-    // const player = await findPlayer(number);
-
-    // テスト用データ
-    const player = {
-      backNumber: "1",
-      name: "",
-      position: "",
-      facePicture: "",
-      leftAndRight: "",
-    };
+    const player = await findPlayer(number);
 
     // 背番号判別
     if (number === "") {
@@ -129,14 +213,7 @@ async function onClick() {
 
     // 選手情報とコメント作成
 
-    // <DB接続時取得データ>
-    // const comments = await findComment(player.id);
-
-    // テスト用データ
-    const comments = {
-      context: "",
-      myContext: "",
-    };
+    const comments = await findComment(player.id);
 
     const para = document.createElement("p");
     para.innerText = "選手情報：\n" + comments.context;
