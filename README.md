@@ -15,7 +15,6 @@
 ## Link
 ### 開発環境
 - localhost:8080/
-### 本番環境（未実施）
-- xxxxx
 
 ## Overview
+[画像]
