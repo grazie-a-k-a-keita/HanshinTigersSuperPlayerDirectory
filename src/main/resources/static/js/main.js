@@ -1,122 +1,24 @@
 // <DB接続用>
 // url(パラム)にアクセス(fetch)する関数
-// async function findPlayer(number) {
-//   const response = await fetch("/player?number=" + number);
-//   return await response.json();
-// }
-
-// async function findComment(playerId) {
-//   const response = await fetch("/fetchComment?id=" + playerId);
-//   return await response.json();
-// }
-
-// async function findBatterRecord(playerId) {
-//   const response = await fetch("/batterRecord?playerId=" + playerId);
-//   return await response.json();
-// }
-
-// async function findPitcherPerformance(playerId) {
-//   const response = await fetch("/pitcherPerformance?playerId=" + playerId);
-//   return await response.json();
-// }
-
-// async function findDefensivePerformance(playerId) {
-//   const response = await fetch("/defensivePerformance?playerId=" + playerId);
-//   return await response.json();
-// }
-
-// <テスト用データ>
 async function findPlayer(number) {
-  return {
-    id: 1,
-    name: "岩崎 優",
-    position: "投手",
-    facePicture: "../13.jpg",
-    backNumber: "13",
-    leftAndRight: "左 / 左",
-  };
+  const response = await fetch("/player?number=" + number);
+  return await response.json();
 }
-
 async function findComment(playerId) {
-  return {
-    context: "テスト用データ",
-    myContext: "テスト用データ",
-  };
+  const response = await fetch("/fetchComment?id=" + playerId);
+  return await response.json();
 }
-
 async function findBatterRecord(playerId) {
-  return {
-    id: 1,
-    playerId: 1,
-    game: 1,
-    bat: 0,
-    atBat: 0,
-    score: 0,
-    hitting: 0,
-    twoBaseHit: 0,
-    threeBaseHit: 0,
-    homeRun: 0,
-    baseHit: 0,
-    runBattedIn: 0,
-    stolenBase: 0,
-    caughtStealing: 0,
-    sacrificeBunt: 0,
-    sacrificeFly: 0,
-    walk: 0,
-    intentionalWalk: 0,
-    hit_by_a_pitch: 0,
-    strikeOut: 0,
-    doublePlay: 0,
-    battingAverage: 0,
-    sluggingPercentage: 0,
-    onBasePercentage: 0,
-  };
+  const response = await fetch("/batterRecord?playerId=" + playerId);
+  return await response.json();
 }
-
 async function findPitcherPerformance(playerId) {
-  return {
-    id: 1,
-    playerId: 1,
-    pitched: 1,
-    win: 0,
-    lose: 0,
-    save: 0,
-    hold: 0,
-    holdPoint: 0,
-    completeGame: 0,
-    shutout: 0,
-    noFourBalls: 0,
-    winRate: 0,
-    batter: 0,
-    inningsPitched: 0,
-    hitting: 0,
-    homeRun: 0,
-    walk: 0,
-    intentionalWalk: 0,
-    hit_by_a_pitch: 0,
-    strikeOut: 0,
-    wildPitch: 0,
-    balk: 0,
-    conceded: 0,
-    earnedRun: 0,
-    earnedRunAverage: 0,
-  };
+  const response = await fetch("/pitcherPerformance?playerId=" + playerId);
+  return await response.json();
 }
-
 async function findDefensivePerformance(playerId) {
-  return [
-    {
-      id: 1,
-      playerId: 1,
-      defensivePosition: "投手",
-      game: 0,
-      putOut: 0,
-      killing: 0,
-      error: 0,
-      doublePlay: 0,
-      fieldingPercentage: 0,
-    },
-  ];
+  const response = await fetch("/defensivePerformance?playerId=" + playerId);
+  return await response.json();
 }
 
 // ボタンをクリックしたときにクリック関数を付与 + Enterでクリック関数実行
@@ -131,7 +33,9 @@ window.document.onkeydown = function (event) {
 const headerTitle = document.getElementById("headerTitle");
 headerTitle.addEventListener("click", pageReset);
 
-// ページをリセットする関数
+/**
+ * ページをリセットする関数
+ */
 function pageReset() {
   facePicture.src = "";
   facePicture.alt = "";
@@ -179,7 +83,10 @@ function pageReset() {
   }
 }
 
-// クリックしたときの関数
+/**
+ * クリックしたときの関数
+ * @returns {void} なし
+ */
 async function onClick() {
   const number = document.getElementById("number-input").value;
 

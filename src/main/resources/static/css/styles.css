@@ -1,211 +1,217 @@
 /* 全体的 */
 html {
-	background: repeating-linear-gradient(90deg, black, black 10px, #fff 10px, #fff 120px);
+  background: repeating-linear-gradient(
+    90deg,
+    black,
+    black 10px,
+    #fff 10px,
+    #fff 120px
+  );
 }
 
 .conteiner {
-	max-width: 1200px;
-	width: 100%;
-	padding: 0 15px;
-	margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 /* ヘッダー */
 header {
-	height: 80px;
-	width: 100%;
-	background-color: black;
-	position: fixed;
-	top: 0;
-	z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .header-left {
-	float: left;
-	height: 80px;
+  float: left;
+  height: 80px;
 }
 
 .header-left h1 {
-	font-size: 32px;
-	color: gold;
-	margin: 0;
-	line-height: 80px;
-	cursor: pointer;
+  font-size: 32px;
+  color: gold;
+  margin: 0;
+  line-height: 80px;
+  cursor: pointer;
 }
 
 .header-right {
-	float: right;
+  float: right;
 }
 
 .header-right a {
-	color: aliceblue;
-	padding: 0 8px;
-	border-radius: 8px;
-	line-height: 80px;
-	transition: all 0.5s;
+  color: aliceblue;
+  padding: 0 8px;
+  border-radius: 8px;
+  line-height: 80px;
+  transition: all 0.5s;
 }
 
 .header-right a:hover {
-	text-decoration: none;
-	color: black;
-	background-color: gold;
+  text-decoration: none;
+  color: black;
+  background-color: gold;
 }
 
 /* .選手検索 */
 .player-search {
-	margin-top: 104px;
-	text-align: center;
+  margin-top: 104px;
+  text-align: center;
 }
 
 .search {
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 24px;
-	border-style: inset;
-	border-color: rgb(231, 231, 231);
-	border-width: 1ex;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+  border-style: inset;
+  border-color: rgb(231, 231, 231);
+  border-width: 1ex;
 }
 
 #number-input {
-	width: 400px;
-	padding: 10px 15px;
-	font-size: 16px;
-	border-radius: 3px;
-	border: 2px solid #cbd6ee;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 24px;
-	z-index: 9;
+  width: 400px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 2px solid #cbd6ee;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 24px;
+  z-index: 9;
 }
 
 #number-input:focus {
-	color: black;
-	z-index: 9;
-	outline: 0;
+  color: black;
+  z-index: 9;
+  outline: 0;
 }
 
 #find-button {
-	cursor: pointer;
-	appearance: none;
-	width: 100px;
-	border: 0;
-	border-radius: 5px;
-	background: gold;
-	color: black;
-	padding: 8px 16px;
-	font-size: 16px;
-	margin: 8px 0;
-	box-shadow: 0 3px grey;
+  cursor: pointer;
+  appearance: none;
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+  background: gold;
+  color: black;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin: 8px 0;
+  box-shadow: 0 3px grey;
 }
 
 #find-button:active {
-	outline: none;
-	box-shadow: none;
-	position: relative;
-	top: 3px;
+  outline: none;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
 }
 
 /* .選手情報(顔写真と詳細) */
 .information {
-	margin: 24px 0 48px 0;
+  margin: 24px 0 48px 0;
 }
 
 #facePicture {
-	height: 320px;
+  height: 320px;
 }
 
 #facePicture:hover {
-	filter: brightness(1.05);
+  filter: brightness(1.05);
 }
 
 .frame {
-	box-shadow: 0 0 5px #333;
-	border: 2px solid rgba(231, 231, 231, 0.98);
+  box-shadow: 0 0 5px #333;
+  border: 2px solid rgba(231, 231, 231, 0.98);
 }
 
 .playerInformation .conteiner {
-	display: flex;
-	text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 .playerInformation-left {
-	width: 50%;
+  width: 50%;
 }
 
 .playerInformation-right {
-	width: 50%;
+  width: 50%;
 }
 
 .playerInformation-right p {
-	background-color: rgba(231, 231, 231, 0.98);
-	font-size: 24px;
-	margin: 24px 16px;
-	border-radius: 8px;
+  background-color: rgba(231, 231, 231, 0.98);
+  font-size: 24px;
+  margin: 24px 16px;
+  border-radius: 8px;
 }
 
 .playerInformation-right p:hover {
-	border-bottom: solid 2px rgb(109, 108, 108);
+  border-bottom: solid 2px rgb(109, 108, 108);
 }
 
 /* コメント(選手情報と俺的コメント) */
 #comment p {
-	font-size: 16px;
-	padding: 12px 12px;
-	margin-top: 24px;
-	background-color: rgba(231, 231, 231, 0.98);
-	border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 12px;
+  margin-top: 24px;
+  background-color: rgba(231, 231, 231, 0.98);
+  border-radius: 8px;
 }
 
 #comment p:hover {
-	border-bottom: solid 2px rgb(109, 108, 108);
+  border-bottom: solid 2px rgb(109, 108, 108);
 }
 
 /* テーブル */
 table {
-	border-collapse: collapse;
-	border: 2px solid rgb(200, 200, 200);
-	letter-spacing: 1px;
-	font-size: 0.8rem;
-	width: 100%;
-	margin-bottom: 24px;
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 th,
 td {
-	border: 1px solid rgba(170, 170, 170, 0.98);
+  border: 1px solid rgba(170, 170, 170, 0.98);
 }
 
 th {
-	background-color: rgba(231, 231, 231, 0.98);
+  background-color: rgba(231, 231, 231, 0.98);
 }
 
 td {
-	background-color: #fff;
-	text-align: center;
-	line-height: 63px;
-	height: 63px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 63px;
+  height: 63px;
 }
 
 caption {
-	padding: 10px;
-	font-weight: bold;
-	font-size: 12px;
-	background-color: rgba(231, 231, 231, 0.98);
-	border-radius: 8px;
-	margin-bottom: 8px;
-	width: 25%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgba(231, 231, 231, 0.98);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  width: 25%;
 }
 
 caption:hover {
-	border-bottom: solid 2px rgb(109, 108, 108);
+  border-bottom: solid 2px rgb(109, 108, 108);
 }
 
 .hide {
-	display: none;
+  display: none;
 }

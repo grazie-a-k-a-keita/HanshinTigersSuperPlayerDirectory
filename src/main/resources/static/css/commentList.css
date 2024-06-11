@@ -1,135 +1,143 @@
 html {
-    background: repeating-linear-gradient(90deg, black, black 10px, #fff 10px, #fff 120px);
+  background: repeating-linear-gradient(
+    90deg,
+    black,
+    black 10px,
+    #fff 10px,
+    #fff 120px
+  );
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .body {
-    margin: 100px 6rem 6rem 6rem;
+  margin: 100px 6rem 6rem 6rem;
 }
 
 .title {
-    float: left;
-    color: gold;
-    margin: 0 0 0 32px;
-    line-height: 80px;
+  float: left;
+  color: gold;
+  margin: 0 0 0 32px;
+  line-height: 80px;
 }
 
 .headerRight {
-    float: right;
-    margin-right: 32px;
-    line-height: 80px;
+  float: right;
+  margin-right: 32px;
+  line-height: 80px;
 }
 
 a {
-    color: aliceblue;
-    padding: 0 8px;
-    border-radius: 8px;
-    transition: all 0.5s;
+  color: aliceblue;
+  padding: 0 8px;
+  border-radius: 8px;
+  transition: all 0.5s;
 }
 
 a:hover {
-    text-decoration: none;
-    color: black;
-    background-color: gold;
+  text-decoration: none;
+  color: black;
+  background-color: gold;
 }
 
 /* テーブル */
 table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    width: 100%;
-    margin: 0 0 24px 0;
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 0 0 24px 0;
 }
 
 th,
 td {
-    border: 1px solid rgba(170, 170, 170, 0.98);
+  border: 1px solid rgba(170, 170, 170, 0.98);
 }
 
 th {
-    background-color: rgba(231, 231, 231, 0.98);
-    height: 12vh;
-    position: sticky;
-    top: 0;
-    color: #fff;
-    background: #333;
+  background-color: rgba(231, 231, 231, 0.98);
+  height: 12vh;
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background: #333;
 }
 
 td {
-    background-color: #fff;
-    text-align: center;
-    line-height: 56px;
-    height: 56px;
-    margin: 6px 4px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 56px;
+  height: 56px;
+  margin: 6px 4px;
 }
 
 .body {
-    overflow-y: scroll;
-    height: 80vh;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 .th1 {
-    width: 10%;
+  width: 10%;
 }
 
 .th2 {
-    width: 3%;
+  width: 3%;
 }
 
 .th3 {
-    width: 35%;
+  width: 35%;
 }
 
 .th4 {
-    width: 20%;
+  width: 20%;
 }
 
 .th5 {
-    width: 25%;
+  width: 25%;
 }
 
 .th6 {
-    width: 7%;
+  width: 7%;
 }
 
 /* ボタン */
 button {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: gray;
-    background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-        inset -2px -2px 3px rgba(0, 0, 0, .6);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 button:hover {
-    background-color: rgb(168, 168, 168);
+  background-color: rgb(168, 168, 168);
 }
 
 button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }

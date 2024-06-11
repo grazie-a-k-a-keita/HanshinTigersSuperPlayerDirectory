@@ -1,80 +1,88 @@
 /* 全体 */
 html {
-    background: repeating-linear-gradient(90deg, black, black 10px, #fff 10px, #fff 120px);
+  background: repeating-linear-gradient(
+    90deg,
+    black,
+    black 10px,
+    #fff 10px,
+    #fff 120px
+  );
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .conteiner {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* ヘッダー */
 header {
-    height: 80px;
-    width: 100%;
-    background-color: black;
-    color: gold;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: gold;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 /* main */
 .main {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 h2 {
-    background-color: rgba(231, 231, 231, 0.98);
-    padding: 8px 8px;
-    margin: 24px 16px;
-    border-radius: 8px;
+  background-color: rgba(231, 231, 231, 0.98);
+  padding: 8px 8px;
+  margin: 24px 16px;
+  border-radius: 8px;
 }
 
 h2:hover {
-    border-bottom: solid 2px rgb(109, 108, 108);
+  border-bottom: solid 2px rgb(109, 108, 108);
 }
 
 .buttonclass {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    margin: 16px 32px;
-    border: 0;
-    line-height: 2.5;
-    padding: 8px 32px;
-    font-size: 18px;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: gray;
-    background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-        inset -2px -2px 3px rgba(0, 0, 0, .6);
+  margin: 16px 32px;
+  border: 0;
+  line-height: 2.5;
+  padding: 8px 32px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 button:hover {
-    background-color: rgb(168, 168, 168);
+  background-color: rgb(168, 168, 168);
 }
 
 button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 textarea {
-    font-family: inherit;
-    font-size: 100%;
+  font-family: inherit;
+  font-size: 100%;
 }
